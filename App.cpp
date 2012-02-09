@@ -87,7 +87,7 @@ void App::initNN()
     std::vector<float> input( Grid::width * Grid::height);
     std::vector<float> output(10);
 
-    const float minError = 0.00001;
+    const float minError = 0.0001;
     float error = 1.0;
     while( error > minError )
     {
